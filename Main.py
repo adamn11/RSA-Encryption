@@ -1,4 +1,6 @@
 from CreateEncryptionKey import Encryption
+from AlphabetTranslation import Alphabet
+
 
 def get_prime_nums():
     prime_nums = []
@@ -31,7 +33,9 @@ def check_if_prime(num):
         else:
             return True
 
+
 # MAIN
 prime = get_prime_nums()
 e_key = Encryption(prime[0], prime[1])
 print e_key.create_encryption_keys()
+
