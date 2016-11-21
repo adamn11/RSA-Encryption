@@ -4,4 +4,4 @@ class Decryption:
         self.d = d
         self.n = n
 
-    # Method to decrypt alphabet
+    # Methods to decrypt alphabet
