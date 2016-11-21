@@ -16,13 +16,11 @@ class Encryption:
 
 
     def find_e(self, n, phi_n):
-        available = []
-        for i in range (2,phi_n):
-            available.append(i)
-        for j in available:
+        for j in range(2,phi_n):
             if (self.coprime(j,phi_n) == True):
                 e = j
         return e
+
 
     def create_encryption_keys(self):
         n = self.p * self.q
