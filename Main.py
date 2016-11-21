@@ -37,5 +37,6 @@ def check_if_prime(num):
 # MAIN
 prime = get_prime_nums()
 e_key = Encryption(prime[0], prime[1])
-print e_key.create_encryption_keys()
+print "Encryption Key: %s" % e_key.create_encryption_keys()
+print "Decryption Key:"
 

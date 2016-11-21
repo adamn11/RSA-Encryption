@@ -1,3 +1,5 @@
+import random
+
 class Encryption:
 
     def __init__(self, p, q):
@@ -16,10 +18,11 @@ class Encryption:
 
 
     def find_e(self, n, phi_n):
+        available = []
         for j in range(2,phi_n):
             if (self.coprime(j,phi_n) == True):
-                e = j
-        return e
+                available.append(j)
+        return random.choice(available)
 
 
     def create_encryption_keys(self):
@@ -29,3 +32,7 @@ class Encryption:
         encryption_keys = [e,n]
 
         return encryption_keys
+
+
+
+
